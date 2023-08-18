@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Furnilife - Furniture eCommerce Bootstrap4 Template</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Favicon -->
+        <link rel="icon" href="assets/images/favicon.ico">
+    
+        <!-- CSS
+        ============================================ -->
+        <!-- Bootstrap CSS -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    
+        <!-- FontAwesome CSS -->
+        <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    
+        <!-- Ionicons CSS -->
+        <link href="assets/css/ionicons.min.css" rel="stylesheet">
+    
+        <!-- Plugins CSS -->
+        <link href="assets/css/plugins.css" rel="stylesheet">
+    
+        <!-- Helper CSS -->
+        <link href="assets/css/helper.css" rel="stylesheet">
+    
+        <!-- Main CSS -->
+        <link href="assets/css/main.css" rel="stylesheet">
+    
+        <!-- Modernizer JS -->
+        <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+
+        <script src="assets/js/vendor/jquery.min.js"></script>
+
+        <script src="assets/js/jquery.cookie.js"></script>
+    
+        <script src="assets/js/axios.min.js"></script>
+
+    
+    </head>
+<body>
+    <div>
+        <!--============================================== 标头容器 =============================================-->
+        
+        <div class="header-container header-sticky">
+    
+            <!--============================================== 头顶 ==============================================-->
+            
+            <div class="header-top pt-15 pb-15">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <div class="header-top-text text-center text-lg-left mb-0 mb-md-15 mb-sm-15">
+                                    
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <!--=======  标题顶部下拉列表  =======-->
+                                
+                            <div class="header-top-dropdown d-flex justify-content-center justify-content-lg-end">
+                                    
+        
+                                <!--=======  单下拉列表  =======-->
+                                
+                                <div class="single-dropdown">
+                                    
+                                    <span class="d-none d-sm-inline-block">语言:</span> <a href="#" id="changeLanguage"><span id="languageName">中文<i class="fa fa-angle-down"></i></span></a>
+                                    <div class="language-currency-list hidden" id="languageList">
+                                        <ul>
+                                            <li><a href="#">中文</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+        
+                                <span class="separator pl-15 pr-15">|</span>
+                                
+                                <!--=======  单个下拉列表结束  =======-->
+        
+                                <!--=======  单个下拉列表  =======-->
+                                
+                                
+                                <div class="single-dropdown">
+                                <span class="d-none d-sm-inline-block">货币:</span>  <a href="#" id="changeCurrency"><span id="currencyName">CNY ￥ <i class="fa fa-angle-down"></i></span></a>
+                                    <div class="language-currency-list hidden" id="currencyList">
+                                        <ul>
+                                            <li><a href="#">CNY ￥</a></li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+        
+                                <span class="separator pl-15 pr-15">|</span>
+                                
+                                <!--=======  单个下拉列表结束  =======-->
+                                
+        
+                                <!--=======  单个下拉列表  =======-->
+                                
+                                
+                                <div class="single-dropdown">
+                                    <a href="#" id="changeAccount"><span id="accountMenuName">我的账户<i class="fa fa-angle-down"></i></span></a>
+                                    <div class="language-currency-list hidden" id="accountList">
+                                        <ul>
+
+                                            
+                                            <li><a href="my-account.html">我的账户</a></li><li><a href="register.html">注册</a></li>
+                                            <li><a href="login-register.html">登录</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+        
+                                
+                                
+                                <!--=======  单个下拉列表结束  =======-->
+                                
+        
+        
+                            </div>
+                            
+                            
+                            <!--=======  页眉顶端下拉列表结束  =======-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--=====  标题顶部  ======-->
+        
+            <!--=============================================
+            =            导航菜单顶部            =
+            =============================================-->
+            
+        
+            <div class="navigation-menu-top pt-35 pb-35 pt-md-15 pb-md-15 pt-sm-15 pb-sm-15">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-6 col-lg-2 col-md-6 col-sm-6 order-1 order-lg-1">
+                            <!--=======  logo  =======-->
+                            
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img src="assets/images/logo2.1.png" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            
+                            <!--=======  结束 logo  =======-->
+                        </div>
+                        <div class="col-12 col-lg-8 col-md-12 col-sm-12 order-3 order-lg-2">
+                            <!--=======  标题功能容器  =======-->
+                            
+                            <div class="header-feature-container mt-md-15 mt-sm-15">
+                                <!--=======  单一功能  =======-->
+                                
+                                <div class="single-feature d-flex">
+                                    <div class="image">
+                                        <i class="icon ion-md-globe"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h5>全网选购</h5>
+                                        <p>全网联通  好物尽享</p>
+                                    </div>
+                                </div>
+                                
+                                <!--=======  End of single feature  =======-->	
+                                <!--=======  single feature  =======-->
+                                
+                                <div class="single-feature d-flex">
+                                    <div class="image">
+                                        <i class="icon ion-md-checkmark-circle-outline"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h5>质量优选</h5>
+                                        <p>七天无理由退货退款</p>
+                                    </div>
+                                </div>
+                                
+                                <!--=======  End of single feature  =======-->	
+                                <!--=======  single feature  =======-->
+                                
+                                <div class="single-feature d-flex mb-sm-0">
+                                    <div class="image">
+                                        <i class="icon ion-md-notifications-outline"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h5>惊爆折扣</h5>
+                                        <p>超低折扣  价廉物美</p>
+                                    </div>
+                                </div>
+                                
+                                <!--=======  End of single feature  =======-->	
+        
+                                
+                            </div>
+                            
+                            <!--=======  End of header feature container  =======-->
+        
+                            
+                        </div>
+                        <div class=" col-6 col-lg-2 col-md-6 col-sm-6 order-2 order-lg-3">
+                            <!--=======  cart icon  =======-->
+                            
+
+                            
+                            <!--=======  End of cart icon  =======-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--=======  End of navigation menu top  =======-->
+        
+            <!--=============================================
+            =            navigation menu         =
+            =============================================-->
+            
+            <div class="navigation-menu">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-12 col-lg-3 col-md-12 col-sm-12">
+                            <!--=======  category menu  =======-->
+                            
+                            <div class="hero-side-category">
+                                <!-- Category Toggle Wrap -->
+                                <div class="category-toggle-wrap">
+                                    <!-- Category Toggle -->
+                                    <button class="category-toggle"><i class="fa fa-bars"></i>商品类别</button>
+                                </div>
+        
+                                <!-- Category Menu -->
+                                <nav class="category-menu">
+                                    <ul>
+                                        <li class="menu-item-has-children"><a href="shop-left-sidebar.html" id="left-sidebar-phone-for-js">手机</a>
+                                            <!-- category submenu -->
+                                            <!-- <ul class="category-mega-menu">
+                                                <li><a href="shop-left-sidebar.html">华为</a></li>
+                                                <li><a href="shop-left-sidebar.html">苹果</a></li>
+                                                <li><a href="shop-left-sidebar.html">小米</a></li>
+                                                <li><a href="shop-left-sidebar.html">OPPO</a></li>
+                                            </ul> -->
+                                        </li>
+                                        <li class="menu-item-has-children"><a href="shop-left-sidebar.html" id="left-sidebar-electric-for-js">家用电器</a>
+                                            <!-- category submenu -->
+                                            <!-- <ul class="category-mega-menu">
+                                                <li><a href="shop-left-sidebar.html">电视</a></li>
+                                                <li><a href="shop-left-sidebar.html">冰箱</a></li>
+                                                <li><a href="shop-left-sidebar.html">洗衣机</a></li>
+                                                <li><a href="shop-left-sidebar.html">空调</a></li>
+                                            </ul> -->
+                                        </li>
+                                        <li class="menu-item-has-children"><a href="shop-left-sidebar.html" id="left-sidebar-computer-for-js">电脑</a>
+                                            <!-- category submenu -->
+                                            <!-- <ul class="category-mega-menu">
+                                                <li><a href="shop-left-sidebar.html">台式</a></li>
+                                                <li><a href="shop-left-sidebar.html">笔记本</a></li>
+                                                <li><a href="shop-left-sidebar.html">游戏本</a></li>
+                                                <li><a href="shop-left-sidebar.html">一体机</a></li>
+                                            </ul> -->
+                                        </li>
+                                        <li class="menu-item-has-children"><a href="shop-left-sidebar.html" id="left-sidebar-clothes-for-js">服装</a>
+                                            <!-- category submenu -->
+                                            <!-- <ul class="category-mega-menu">
+                                                <li><a href="shop-left-sidebar.html">男装</a></li>
+                                                <li><a href="shop-left-sidebar.html">女装</a></li>
+                                                <li><a href="shop-left-sidebar.html">童装</a></li>
+                                                <li><a href="shop-left-sidebar.html">内衣</a></li>
+                                            </ul> -->
+                                        </li>
+                                        <li><li class="menu-item-has-children"><a href="shop-left-sidebar.html" id="left-sidebar-makeup-for-js">美妆/个护</a>
+                                            <!-- category submenu -->
+                                            <!-- <ul class="category-mega-menu">
+                                                <li><a href="shop-left-sidebar.html">面部护肤</a></li>
+                                                <li><a href="shop-left-sidebar.html">男士护肤</a></li>
+                                                <li><a href="shop-left-sidebar.html">香水彩妆</a></li>
+                                                <li><a href="shop-left-sidebar.html">洗发护发</a></li><li><a href="shop-left-sidebar.html">口腔护理</a></li>
+                                            </ul> -->
+                                        </li></li>
+                                        <li class="menu-item-has-children"><a href="shop-left-sidebar.html" id="left-sidebar-Fshoes-for-js">女鞋/箱包/饰品</a>
+                                            <!-- category submenu -->
+                                            <!-- <ul class="category-mega-menu">
+                                                <li><a href="shop-left-sidebar.html">时尚女鞋</a></li>
+                                                <li><a href="shop-left-sidebar.html">潮流男包</a></li>
+                                                <li><a href="shop-left-sidebar.html">精品女包</a></li>
+                                                <li><a href="shop-left-sidebar.html">功能箱包</a></li><li><a href="shop-left-sidebar.html">珠宝首饰</a></li>
+                                            </ul> -->
+                                        </li>
+                                        <li class="menu-item-has-children"><a href="shop-left-sidebar.html" id="left-sidebar-Mshoes-for-js">男鞋/运动/户外</a>
+                                            <!-- category submenu -->
+                                            <!-- <ul class="category-mega-menu">
+                                                <li><a href="shop-left-sidebar.html">潮流男鞋</a></li>
+                                                <li><a href="shop-left-sidebar.html">运动鞋包</a></li>
+                                                <li><a href="shop-left-sidebar.html">运动服饰</a></li>
+                                                <li><a href="shop-left-sidebar.html">体育用品</a></li><li><a href="shop-left-sidebar.html">珠宝首饰</a></li>
+                                            </ul> -->
+                                        </li>
+                                        <li class="menu-item-has-children"><a href="shop-left-sidebar.html" id="left-sidebar-food-for-js">食品/生鲜</a>
+                                            <!-- category submenu -->
+                                            <!-- <ul class="category-mega-menu">
+                                                <li><a href="shop-left-sidebar.html">新鲜菜品</a></li>
+                                                <li><a href="shop-left-sidebar.html">精品肉食</a></li>
+                                                <li><a href="shop-left-sidebar.html">优选水果</a></li>
+                                                <li><a href="shop-left-sidebar.html">冷饮冻货</a></li><li><a href="shop-left-sidebar.html">海鲜水产</a></li><li><a href="shop-left-sidebar.html">休闲食品</a></li><li><a href="shop-left-sidebar.html">粮油调味</a></li>
+                                            </ul> -->
+                                        </li>
+                                        <li class="menu-item-has-children"><a href="shop-left-sidebar.html" id="left-sidebar-books-for-js">图书/文娱</a>
+                                            <!-- category submenu -->
+                                            <!-- <ul class="category-mega-menu">
+                                                <li><a href="shop-left-sidebar.html">文学</a></li>
+                                                <li><a href="shop-left-sidebar.html">童书</a></li>
+                                                <li><a href="shop-left-sidebar.html">人文社科</a></li>
+                                                <li><a href="shop-left-sidebar.html">教材教辅</a></li><li><a href="shop-left-sidebar.html">科学</a></li><li><a href="shop-left-sidebar.html">休闲食品</a></li><li><a href="shop-left-sidebar.html">艺术</a></li>
+                                            </ul> -->
+                                        </li>
+                                        
+                                    </ul>
+                                </nav>
+                            </div>
+                            
+                            <!--=======  End of category menu =======-->
+    
+                            <!--=======  sticky logo  =======-->
+                            
+                            <div class="sticky-logo">
+                                <a href="index.html">
+                                    <img src="assets/images/logo2.1.png" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            
+                            <!--=======  End of sticky logo  =======-->
+    
+                            <!--=======  search icon for tablet  =======-->
+                                    
+                            <div class="search-icon-menutop-tablet text-right d-inline-block d-lg-none">
+                                <a href="#" id="search-overlay-active-button">
+                                    <i class="icon ion-md-search"></i>
+                                </a>
+                            </div>
+                            
+                            <!--=======  End of search icon for tablet  =======-->
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <!-- navigation section -->
+                            <div class="main-menu">
+                                <nav>
+                                    <ul>
+                                        <li class="active menu-item-has-children"><a href="index.html">主页面</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="index.html">主页面 1</a></li>
+                                        
+                                            </ul>
+                                        </li>
+                                        
+                                        
+                                        <li class="menu-item-has-children"><a href="#">更多页面</a>
+                                            <ul class="mega-menu three-column">
+                                                <li><a href="#">我的购物</a>
+                                                    <ul>
+            
+                                                        
+                                                    
+                                                        
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">账户操作</a>
+                                                    <ul>
+                                                        <li><a href="my-account.html">我的账户</a></li><li><a href="register.html">注册</a></li>
+                                                    
+                                                        <li><a href="faq.html">FAQ</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">其他</a>
+                                                    <ul>
+                                                        
+                                                        
+                                                        <li><a href="about.html">关于</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="megamenu-banner text-center d-none d-lg-block">
+                                                    <a href="shop-left-sidebar.html">
+                                                        <img src="assets/images/banners/megamenu-banner.jpg" class="img-fluid" alt="">
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        
+                                        
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!-- end of navigation section -->
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            <!--=======  navigation search bar  =======-->
+                            
+                            <!-- <div class="navigation-search d-none d-lg-block">
+                                <input type="search" placeholder="搜索商品 ...">
+                                <button><i class="icon ion-md-search"></i></button>
+                            </div> -->
+                            
+                            <!--=======  End of navigation search bar  =======-->
+                        </div>
+                        <div class="col-12 d-block d-lg-none">
+                            <!-- Mobile Menu -->
+                            <div class="mobile-menu"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--=====  End of navigation menu  ======-->
+                
+        </div>
+        
+        <!--=====  End of header container  ======-->
+        
+        <!--=============================================
+        =            breadcrumb area         =
+        =============================================-->
+        
+        <div class="breadcrumb-area pt-15 pb-15">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!--=======  breadcrumb container  =======-->
+                        
+                        <div class="breadcrumb-container">
+                            <nav>
+                                <ul>
+                                    <li class="parent-page"><a href="index.html">主页</a></li>
+                                    <li>注册</li>
+                                </ul>
+                            </nav>
+                        </div>
+                        
+                        <!--=======  End of breadcrumb container  =======-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--=====  End of breadcrumb area  ======-->
+        
+        <!--=============================================
+        =            Login Register page content         =
+        =============================================-->
+    
+        <div class="page-section mb-50">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-xs-12 col-lg-3"></div>
+                    <div class="col-sm-12 col-md-12 col-xs-12 col-lg-6 mb-30">
+                        <!-- Login Form s-->
+                        <form action="#">
+    
+                            <div class="login-form">
+                                <h4 class="login-title">注册</h4>
+    
+                                <div class="row">
+                                    <div class="col-md-12 col-12 mb-20">
+                                        <label>用户名</label>
+                                        <input class="mb-0 notEmpty form-control" type="text" placeholder="用户名" id="username" >
+                                        <div class="invalid-feedback">
+                                           此项不能为空
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-20">
+                                        <label>密码</label>
+                                        <!-- <div class="alert alert-danger passwordAlert" role="alert" style="display: none;">两次输入的密码必须相同</div> -->
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text showPwd" style="cursor: pointer;">显示</span>
+                                            <input class="mb-0  form-control" type="password" placeholder="请输入密码" id="password">
+                                            <div class="invalid-feedback a1">
+                                                此项不能为空
+                                             </div>
+                                        </div>
+
+                                    </div>
+    
+                                    <div class="col-12 mb-20">
+                                        <label>再次输入密码</label>
+                                        <!-- <div class="alert alert-danger passwordAlert" role="alert" style="display: none;">两次输入的密码必须相同</div>		 -->
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text showPwd" style="cursor: pointer;">显示</span>
+                                            <input class="mb-0  form-control" type="password" placeholder="请再次输入密码" id="passwordConfirm">
+                                            <div class="invalid-feedback a2">
+                                                此项不能为空
+                                             </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-3 mb-20">
+                                        请选择用户类型:
+                                    </div>
+                                    <div class="col-4 mb-20">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="usertype" id="user" checked>
+                                            <label class="form-check-label" for="user">
+                                              客户
+                                            </label>
+                                          </div>
+                                    </div>
+                                    <div class="col-4 mb-20">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="usertype" id="seller" >
+                                            <label class="form-check-label" for="seller">
+                                              商家
+                                            </label>
+                                          </div>
+                                    </div>
+
+                                    <div class="col-3 mb-20">
+                                        请选择性别:
+                                    </div>
+                                    <div class="col-4 mb-20">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="gender" id="male" checked>
+                                            <label class="form-check-label" for="user">
+                                              男
+                                            </label>
+                                          </div>
+                                    </div>
+                                    <div class="col-4 mb-20">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="gender" id="female" >
+                                            <label class="form-check-label" for="seller">
+                                              女
+                                            </label>
+                                          </div>
+                                    </div>
+                                    <div class="col-12 mb-20">
+                                        <label>请输入年龄</label>
+                                        <!-- <div class="alert alert-danger passwordAlert" role="alert" style="display: none;">两次输入的密码必须相同</div>		 -->
+                                        <input class="mb-0 notEmpty form-control" type="number" placeholder="请输入年龄" id="age">
+                                        <div class="invalid-feedback">
+                                           此项不能为空
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-20">
+                                        <label>请输入地址</label>
+                                        <!-- <div class="alert alert-danger passwordAlert" role="alert" style="display: none;">两次输入的密码必须相同</div>		 -->
+                                        <input class="mb-0 notEmpty form-control" type="text" placeholder="请输入地址" id="address">
+                                        <div class="invalid-feedback">
+                                           此项不能为空
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-20">
+                                        <label>请输入电话号码</label>
+                                        <!-- <div class="alert alert-danger passwordAlert" role="alert" style="display: none;">两次输入的密码必须相同</div>		 -->
+                                        <input class="mb-0 notEmpty form-control" type="number" placeholder="请输入电话号码" id="phoneNumber">
+                                        <div class="invalid-feedback">
+                                           此项不能为空
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-20">
+                                        <label>请输入备注</label>
+                                        <!-- <div class="alert alert-danger passwordAlert" role="alert" style="display: none;">两次输入的密码必须相同</div>		 -->
+                                        <input class="mb-0" type="text" placeholder="请输入备注" id="note">
+                                    </div>
+                                    
+                                    <div class="col-md-12">
+                                        <button type="button" class="btn btn-primary" id="registerbtn" disabled>注册</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!--=====  End of Login Register page content  ======-->
+        
+        <!--=============================================
+        =            footer         =
+        =============================================-->
+        
+        <div class="footer-container">
+            <!--=======  footer navigation  =======-->
+            
+            <div class="footer-navigation pt-40 pb-20 pb-lg-40 pt-sm-30 pb-sm-10">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <!--=======  address block  =======-->
+                            
+                            <div class="address-block">
+                                <div class="image">
+                                    <a href="index.html">
+                                        <img src="assets/images/logo2.1.png" class="img-fluid" alt="">
+                                    </a>
+                                </div>
+    
+                                <div class="address-text">
+                                    <ul>
+                                        <li>地址: 四川省 甘孜州 理塘县 然日卡村 128号 XUEBAO123- China.</li>
+                                        <li>电话: (086) 1145146670</li>
+                                        
+                                        <li>Email: ruikewudai@xuebao.bizui</li>
+                                    </ul>
+                                </div>
+    
+    
+                            </div>
+                            
+                            <!--=======  End of address block  =======-->
+                        </div>
+                        <div class="col-lg-2 col-md-6">
+                            <!--=======  widget block  =======-->
+                            
+                            <div class="widget-block">
+                                <h4 class="footer-widget-title mb-sm-10">信息</h4>
+                                <ul>
+                                    <li><a href="about.html">关于我们</a></li>
+                                    
+                                    
+                                    
+                                    <li><a href="#">商户登录</a></li>
+                                    
+                                </ul>
+                            </div>
+                            
+                            <!--=======  End of widget block  =======-->
+                        </div>
+                        <div class="col-lg-2 col-md-6">
+                            <!--=======  widget block  =======-->
+                            
+                            <div class="widget-block">
+                                <h4 class="footer-widget-title mt-sm-20 mb-sm-10">我的账户</h4>
+                                <ul>
+                                    
+                                    <li><a href="#">订单历史</a></li>
+                                    <li><a href="my-account.html">我的账户</a></li><li><a href="register.html">注册</a></li>
+                                    
+
+                                </ul>
+                            </div>
+                            
+                            <!--=======  End of widget block  =======-->
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+            
+            <!--=======  End of footer navigation  =======-->
+    
+            <!--=======  footer copyright  =======-->
+            
+            <div class="footer-copyright pt-20 pb-20">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 text-center text-md-left mb-20 mb-md-0">
+                            <!--=======  footer copyright text  =======-->
+                            
+                            <div class="footer-copyright-text">
+                                <p>Copyright &copy; 2023 <a href="http://www.bootstrapmb.com/">Ttrue Shop</a>,所有权利保障.</p>
+                            </div>
+                            
+                            <!--=======  End of footer copyright text  =======-->
+                        </div>
+                        <div class="col-md-6 text-center text-md-right">
+                            <!--=======  payment logo  =======-->
+                            
+                            <div class="payment-logo">
+                                <img src="assets/images/payment.png" class="img-fluid" alt="">
+                            </div>
+                            
+                            <!--=======  End of payment logo  =======-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--=======  End of footer copyright  =======-->
+        </div>
+        
+        <!--=====  End of footer  ======-->
+    
+        <!--=============================================
+        =            search overlay         =
+        =============================================-->
+        
+        <div class="search-overlay" id="search-overlay">
+            <a href="#" class="search-overlay-close" id="search-overlay-close"><i class="fa fa-times"></i></a>
+            <div class="search-box">
+                <input type="search" placeholder="Search entire store here">
+                <button><i class="icon ion-md-search"></i></button>
+            </div>
+        </div>
+            
+        <!--=====  End of search overlay  ======-->
+    
+        <!-- scroll to top  -->
+        <a href="#" class="scroll-top"></a>
+      </div>	
+      <script>
+
+        let data={
+            username:"",
+            password:"",
+            passwordConfirm:"",
+            usertype:1,
+            gender:"male",
+            age:null,
+            address:"",
+            phoneNumber:null,
+            note:""
+        }
+        let postdata
+        let updateBtn=function(){
+            let allfilled=true
+            for(let i=0;i<$(".notEmpty").length;i++){
+                if($(".notEmpty").eq(i).val()==""){
+                    allfilled=false;
+                    break;
+                }
+            }
+            if(allfilled){
+                if(data.passwordConfirm!=""&&data.password!=""&&data.passwordConfirm==data.password){
+                    $("#registerbtn").removeAttr("disabled")
+                }
+                else{
+                    $("#registerbtn").attr("disabled")
+                }
+            }
+            else{
+                $("#registerbtn").attr("disabled")
+            }
+
+        }
+        let updatePwd=function(){
+            let pwd=$("#password")
+            let pwdc=$("#passwordConfirm")
+            if( pwd.val()==""){
+                pwd.attr('class',"mb-0 form-control is-invalid")
+                $(".a1").html("此项不能为空")
+            }
+            if( pwdc.val()==""){
+                pwdc.attr('class',"mb-0 form-control is-invalid")
+                $(".a2").html("此项不能为空")
+            }
+            if(pwd.val()!=""&&pwdc.val()!=""&&pwd.val()!=pwdc.val()){
+                pwd.attr('class',"mb-0 form-control is-invalid")
+                pwdc.attr('class',"mb-0 form-control is-invalid")
+                $(".a1").html("前后输入的密码必须相同")
+                $(".a2").html("前后输入的密码必须相同")
+            }
+            if(pwd.val()!=""&&pwdc.val()!=""&&pwd.val()==pwdc.val()){
+                pwd.attr('class',"mb-0 form-control is-valid")
+                pwdc.attr('class',"mb-0 form-control is-valid")
+            }
+            
+        }
+        
+        $(".showPwd").click(function(){
+            $(this).next().attr('type')=="password"?$(this).next().attr('type','text'):$(this).next().attr('type','password')
+            $(this).html()=="显示"?$(this).html("隐藏"):$(this).html("显示")
+        })
+
+
+        $(".notEmpty").blur(function(){
+            // console.log($(this).val())
+            if($(this).val()==""){
+                $(this).attr('class',"mb-0 notEmpty form-control is-invalid")
+            }else{
+                $(this).attr('class',"mb-0 notEmpty form-control is-valid")
+            }
+        })
+        $("#username").blur(()=>{
+            data.username=$("#username").val()
+            updateBtn()
+        })
+        $("#password").blur(function(){
+            data.password=$("#password").val()
+            updateBtn()
+            updatePwd()
+        })
+        $("#passwordConfirm").blur(function(){
+            data.passwordConfirm=$("#passwordConfirm").val()
+            updateBtn()
+            updatePwd()
+        })
+        $("#user").click(()=>{
+            data.usertype=1;
+            updateBtn()
+        })
+        $("#seller").click(()=>{
+            data.usertype=2;
+            updateBtn()
+        })
+        $("#male").click(()=>{
+            data.gender="male"
+            updateBtn()
+        })
+        $("#female").click(()=>{
+            data.gender="female";
+            updateBtn()
+        })
+        $("#age").blur(()=>{
+            data.age=Number($("#age").val())
+            updateBtn()
+        })
+        $("#address").blur(()=>{
+            data.address=$("#address").val()
+            updateBtn()
+        })
+        $("#phoneNumber").blur(()=>{
+            data.phoneNumber=Number($("#phoneNumber").val())
+            updateBtn()
+        })
+        $("#note").blur(()=>{
+            data.note=$("#note").val()
+            updateBtn()
+        })
+        $("#registerbtn").click(()=>{
+            postdata=new FormData()
+            postdata.append("account",data.username)
+            postdata.append("pwd",data.password)
+            postdata.append("type",data.usertype)
+            postdata.append("age",data.age)
+            postdata.append("address",data.address)
+            postdata.append("mobile",data.phoneNumber)
+            postdata.append("notes",data.note)
+            axios({
+                    //请求类型
+                    method: "POST",
+                    //URL
+                    url: 'http://192.168.43.201:8081/register',
+                    //设置请求体
+                    data: postdata
+                }).then(value => {
+                    console.log("success")
+                    $(location).attr('href', 'http://127.0.0.1:5500/login-register.html');
+                },error=>{
+                    console.log("error")
+                })
+        })
+      </script>
+      <!-- Popper JS -->
+      <script src="assets/js/popper.min.js"></script>
+  
+      <!-- Bootstrap JS -->
+      <script src="assets/js/bootstrap.min.js"></script>
+  
+      <!-- Plugins JS -->
+      <script src="assets/js/plugins.js"></script>
+  
+      <!-- Main JS -->
+      <script src="assets/js/main.js"></script>
+
+      <script src="./assets/js/pagejs/leftbanner.js"></script>
+</body>
+</html>

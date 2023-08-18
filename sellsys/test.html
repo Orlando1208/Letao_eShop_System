@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="assets/js/vendor/jquery.min.js"></script>
+    <script src="assets/js/axios.min.js"></script>
+</head>
+<body>
+    <button id="test">test</button>
+    <script>
+        $(()=>{
+            let data={
+                1:{a:16,b:22,c:31},
+                2:{a:58,b:23,c:13},
+                3:{a:11,b:42,c:24},
+                4:{a:43,b:21,c:52},
+            }
+            for(let v in data){
+                console.log(v)
+                console.log(data[v])
+            }
+        })
+        $("#test").click(function(){
+            console.log('click')
+            axios({
+                //请求类型
+                method: "GET",
+                //URL
+                url: 'http://192.168.43.201:8081/banner'
+            }).then(value=>{
+                console.log(value)
+                for(let key in value.data.data){
+                    axios({
+                        method:"GET",
+                        url: 'http://192.168.43.201:8081/goods',
+                        params:{
+                            gid:value.data.data[key].goodsID
+                        }
+                    }).then(value=>{
+                        console.log(value)
+                    })
+                }
+            }).catch(err=>{
+                console.log(err)
+            })
+
+            axios({
+                //请求类型
+                method: "GET",
+                //URL
+                url: 'http://192.168.43.201:8081/phone',
+                params:{
+                    gid:"1"
+                }
+            }).then(value=>{
+                console.log(value)
+            }).catch(err=>{
+                console.log(err)
+            })
+        })
+
+    </script>
+</body>
+</html>
